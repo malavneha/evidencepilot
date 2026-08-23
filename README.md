@@ -1,8 +1,10 @@
-# evidencepilot
-Autonomous AI research agent for evidence-backed clinical research workflows.
+
+
 # EvidencePilot
 
 ## An autonomous AI research agent for evidence-focused clinical research
+
+Autonomous AI research agent for evidence-backed clinical research workflows.
 
 EvidencePilot is designed to help researchers turn complex clinical research questions into structured, evidence-focused research briefs.
 
