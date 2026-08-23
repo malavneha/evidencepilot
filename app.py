@@ -1,16 +1,19 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
 
-from agent import EvidencePilot
+from research import ResearchPipeline
 
 
 app = FastAPI(
     title="EvidencePilot",
-    description="Autonomous AI research agent for evidence-focused clinical research.",
-    version="0.1.0",
+    description=(
+        "Autonomous AI research agent for "
+        "evidence-focused clinical research."
+    ),
+    version="0.2.0",
 )
 
-pilot = EvidencePilot()
+pipeline = ResearchPipeline()
 
 
 class ResearchRequest(BaseModel):
@@ -22,10 +25,27 @@ def home():
     return {
         "name": "EvidencePilot",
         "status": "ready",
-        "message": "Submit a clinical research question to begin."
+        "description": (
+            "Autonomous evidence-focused research workflow."
+        ),
     }
 
 
 @app.post("/research")
 def research(request: ResearchRequest):
-    return pilot.run(request.question)
+    result = pipeline.run(request.question)
+
+    return {
+        "question": result.question,
+        "evidence": [
+            {
+                "title": item.title,
+                "source": item.source,
+                "url": item.url,
+                "summary": item.summary,
+                "evidence_type": item.evidence_type,
+            }
+            for item in result.evidence
+        ],
+        "evidence_gaps": result.evidence_gaps,
+    }
