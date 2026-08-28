@@ -109,9 +109,14 @@ Built with Python, FastAPI, Google GenAI SDK, Gemini, and Google Cloud technolog
 
 ----------
 . 
-##👩🏻‍⚕️ Develper
+##👩🏻‍⚕️ Developer
 
 Dr Neha Malav
 MBBS/Ai/ML/gen ai/data analytics
+
+linkdin
+
+https://www.linkedin.com/in/dr-neha-malav-743a25332
+
 
 
