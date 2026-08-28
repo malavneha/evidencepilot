@@ -1,6 +1,6 @@
 # EvidencePilot 🔎
 
-### An Autonomous, Evidence-Focused Clinical Research Agent
+### **An AI-powered evidence research agent that turns complex clinical questions into a structured research workflow.**
 
 EvidencePilot is an AI-powered research workflow designed to help users investigate clinical and biomedical questions using structured evidence retrieval, research planning, and evidence-gap analysis.
 
@@ -31,6 +31,12 @@ https://www.linkedin.com/posts/dr-neha-malav-743a25332_ai-generativeai-gemini-ac
 ## video demo
 
 https://youtube.com/shorts/gH1DQYhbmCE?si=Cce5WbWS-EXsEdYO
+
+## Inspiration
+
+Clinical research can require researchers to move through many sources, extract relevant findings, compare evidence, and identify unanswered questions. For complex questions, this process can become repetitive and difficult to organize.
+
+With a medical background and a growing interest in AI and research, I wanted to explore how an AI agent could help structure this process while keeping evidence and uncertainty visible.
 
 ## ✨ What EvidencePilot Does
 
@@ -91,7 +97,20 @@ Google Cloud Run was used as part of the development and deployment workflow. Ho
 The issue was reported to Google Cloud support and the hackathon managers. To ensure that the project remained publicly accessible and testable, the working service was deployed on Render.
 Current public deployment:
 https://evidencepilot.onrender.com⁠
+
 -----------
+## Agentic Workflow
+
+EvidencePilot is designed as a workflow rather than a single prompt-response system. Each stage has a specific role:
+
+- **Planner** — breaks the clinical question into research objectives.
+- **Retriever** — searches relevant PubMed literature.
+- **Evidence Organizer** — structures retrieved evidence.
+- **Gap Analyzer** — identifies missing evidence and uncertainties.
+- **Synthesis Layer** — prepares the evidence-focused research output.
+
+This separation makes the workflow easier to inspect, reproduce, and extend.
+-----------------------------
 🧪 Testing
 
 Open the interactive API documentation:
@@ -107,7 +126,21 @@ Evidence retrieval
 Evidence-gap identification
 Gemini-powered synthesis
 A reproducible API workflow
+-----------
+## How It Works
+
+A user provides a clinical research question. EvidencePilot creates a structured research plan and uses evidence retrieval to identify relevant PubMed literature. The retrieved information is then organized into an evidence-focused response with explicit evidence gaps and uncertainties.
+
+The workflow is designed to help researchers move from an open-ended question toward a more structured research process while keeping evidence and uncertainty visible.
+--------
+## What I Learned
+
+Building EvidencePilot helped me learn how to combine AI reasoning with external evidence retrieval, structure an agentic research workflow, build an API with FastAPI, containerize an application with Docker, and deploy a working AI application.
+
+The project also taught me an important practical lesson: building an AI agent is not only about the model—it is about designing a reliable workflow around the model, evidence sources, uncertainty, and reproducible execution.
+
 ---------------
+
 📌 Hackathon Project
 Built for the Google Cloud / Gemini hackathon to demonstrate an evidence-focused autonomous research workflow using Google AI technologies.
 Built with Python, FastAPI, Google GenAI SDK, Gemini, and Google Cloud technologies.
