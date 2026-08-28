@@ -10,6 +10,14 @@ EvidencePilot is designed to help researchers turn complex clinical research que
 
 Instead of acting as a simple question-and-answer chatbot, EvidencePilot is designed as a multi-step agentic workflow that can plan research tasks, gather relevant evidence, organize findings, identify evidence gaps, and synthesize results.
 
+##🚀live deployed api
+
+https://evidencepilot.onrender.com/docs
+
+##🚀Hosted project url
+
+https://evidencepilot.onrender.com/docs
+
 ## Problem
 
 Clinical research often requires researchers to search across multiple sources, review large amounts of information, compare findings, and identify unanswered questions.
