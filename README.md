@@ -20,15 +20,15 @@ https://evidencepilot.onrender.com
 
 https://github.com/malavneha/evidencepilot
 
-## blog link
+## Blog link
 
 https://nehamalavai-builder.blogspot.com/2026/08/building-evidencepilot-evidence.html
 
-## linkdin post link
+## Linkdin post link
 
 https://www.linkedin.com/posts/dr-neha-malav-743a25332_ai-generativeai-gemini-activity-7499047519289745408-Z9lo
 
-## video demo
+## Video demo
 
 https://youtube.com/shorts/gH1DQYhbmCE?si=Cce5WbWS-EXsEdYO
 
