@@ -20,9 +20,12 @@ https://evidencepilot.onrender.com
 
 https://github.com/malavneha/evidencepilot
 
-##blog link
+## blog link
 
 https://nehamalavai-builder.blogspot.com/2026/08/building-evidencepilot-evidence.html
+## video demo
+
+https://youtube.com/shorts/gH1DQYhbmCE?si=Cce5WbWS-EXsEdYO
 
 ## ✨ What EvidencePilot Does
 
