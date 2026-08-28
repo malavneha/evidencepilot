@@ -72,16 +72,22 @@ Clinical Research Question
           ↓
    Evidence-Focused Brief
 
+------------------
+
 ##☁️ Deployment
 Google Cloud Run was used as part of the development and deployment workflow. However, deployment on Cloud Run was blocked by a Google Cloud billing/account issue.
 The issue was reported to Google Cloud support and the hackathon managers. To ensure that the project remained publicly accessible and testable, the working service was deployed on Render.
 Current public deployment:
-https://evidencepilot.onrender.com⁠�
+https://evidencepilot.onrender.com⁠
+-----------
 🧪 Testing
+
 Open the interactive API documentation:
 https://evidencepilot.onrender.com/docs⁠�
 Use the POST /research endpoint with a clinical research question and review the generated research plan, evidence, and evidence gaps.
+-------------
 🎯 Why EvidencePilot?
+
 Clinical research often requires searching across large amounts of literature, understanding study relevance, and identifying uncertainty.
 EvidencePilot aims to make this process more structured by combining:
 Autonomous research planning
@@ -89,12 +95,13 @@ Evidence retrieval
 Evidence-gap identification
 Gemini-powered synthesis
 A reproducible API workflow
+---------------
 📌 Hackathon Project
 Built for the Google Cloud / Gemini hackathon to demonstrate an evidence-focused autonomous research workflow using Google AI technologies.
 Built with Python, FastAPI, Google GenAI SDK, Gemini, and Google Cloud technologies.
 
-
-**Important:** Your README now gives judges the **GitHub → Live Demo** path directly, so they can easily test EvidencePilot. 
+----------
+. 
 ##👩🏻‍⚕️ Develper
 
 Dr Neha Malav
