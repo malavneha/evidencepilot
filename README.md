@@ -20,6 +20,10 @@ https://evidencepilot.onrender.com
 
 https://github.com/malavneha/evidencepilot
 
+##blog link
+
+https://nehamalavai-builder.blogspot.com/2026/08/building-evidencepilot-evidence.html
+
 ## ✨ What EvidencePilot Does
 
 Given a clinical research question, EvidencePilot:
