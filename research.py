@@ -11,8 +11,19 @@ from evidence import EvidenceItem, EvidenceRetriever
 
 
 @dataclass
-class ResearchResult:
+class ResearchPlan:
+    """Structured plan generated from a research question."""
+
     question: str
+    objectives: List[str]
+
+
+@dataclass
+class ResearchResult:
+    """Final result returned by the research pipeline."""
+
+    question: str
+    plan: ResearchPlan
     evidence: List[EvidenceItem]
     evidence_gaps: List[str]
 
@@ -23,8 +34,26 @@ class ResearchPipeline:
     def __init__(self):
         self.retriever = EvidenceRetriever()
 
-    def retrieve_evidence(self, question: str) -> List[EvidenceItem]:
+    def create_plan(self, question: str) -> ResearchPlan:
+        """Create a simple structured research plan."""
+
+        question = question.strip()
+
+        return ResearchPlan(
+            question=question,
+            objectives=[
+                "Identify relevant clinical evidence.",
+                "Assess the type and relevance of available evidence.",
+                "Identify important evidence gaps and uncertainties.",
+            ],
+        )
+
+    def retrieve_evidence(
+        self,
+        question: str,
+    ) -> List[EvidenceItem]:
         """Retrieve evidence for the research question."""
+
         return self.retriever.search(question)
 
     def identify_gaps(
@@ -35,8 +64,9 @@ class ResearchPipeline:
 
         if not evidence:
             return [
-                "No evidence has been retrieved yet.",
+                "No evidence has been retrieved.",
                 "Additional source retrieval is required.",
+                "The research question cannot yet be supported by retrieved evidence.",
             ]
 
         return [
@@ -47,13 +77,20 @@ class ResearchPipeline:
         ]
 
     def run(self, question: str) -> ResearchResult:
-        """Run the research pipeline."""
+        """Run the complete research workflow."""
 
+        question = question.strip()
+
+        if not question:
+            raise ValueError("Research question cannot be empty.")
+
+        plan = self.create_plan(question)
         evidence = self.retrieve_evidence(question)
         gaps = self.identify_gaps(evidence)
 
         return ResearchResult(
             question=question,
+            plan=plan,
             evidence=evidence,
             evidence_gaps=gaps,
         )
