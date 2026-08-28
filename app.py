@@ -36,8 +36,11 @@ def research(request: ResearchRequest):
     result = pipeline.run(request.question)
 
     return {
-        "question": result.question,
-        "evidence": [
+    "question": result.question,
+    "research_plan": {
+        "objectives": result.plan.objectives,
+    },
+    "evidence": [
             {
                 "title": item.title,
                 "source": item.source,
