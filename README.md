@@ -36,6 +36,11 @@ https://www.linkedin.com/posts/dr-neha-malav-743a25332_ai-generativeai-gemini-ac
 
 https://youtube.com/shorts/gH1DQYhbmCE?si=Cce5WbWS-EXsEdYO
 
+##screenshots
+[screenshot][aspirin.jpg]
+[screenshot](aspirin..jpg)
+
+
 ## Inspiration
 
 Clinical research can require researchers to move through many sources, extract relevant findings, compare evidence, and identify unanswered questions. For complex questions, this process can become repetitive and difficult to organize.
@@ -57,6 +62,8 @@ Given a clinical research question, EvidencePilot:
 ### Example Question
 
 > What is the cardiovascular benefit of GLP-1 receptor agonists in adults with type 2 diabetes?
+
+>question": "What are the benefits of aspirin?"
 
 The system generates a research plan and organizes the available evidence and evidence gaps rather than simply returning an unsupported answer.
 
@@ -97,11 +104,7 @@ Clinical Research Question
 ------------------
 
 ##☁️ Deployment
-Google Cloud Run was used as part of the development and deployment workflow. However, deployment on Cloud Run was blocked by a Google Cloud billing/account issue.
-The issue was reported to Google Cloud support and the hackathon managers. To ensure that the project remained publicly accessible and testable, the working service was deployed on Render.
-Current public deployment:
-https://evidencepilot.onrender.com⁠
-
+Google Cloud Run was used as part of the development and deployment workflow. 
 -----------
 ## Agentic Workflow
 
@@ -116,7 +119,6 @@ EvidencePilot is designed as a workflow rather than a single prompt-response sys
 This separation makes the workflow easier to inspect, reproduce, and extend.
 -----------------------------
 🧪 Testing
-
 
 my Testing questn is
 {
@@ -292,11 +294,12 @@ Google Cloud Console → Cloud Run → EvidencePilot
 
 Dr Neha Malav
 MBBS/Ai/ML/gen ai/data analytics
+malavneha855@gmail.com
 
-linkdin
+☆linkdin
 
 https://www.linkedin.com/in/dr-neha-malav-743a25332
-malavneha855@gmail.com 
+ 
 
 
 
