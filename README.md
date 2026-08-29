@@ -9,8 +9,10 @@ Instead of simply generating an answer, EvidencePilot breaks a research question
 ## 🚀 Live Demo
 
 **API / Interactive Documentation:**
+☆
+https://evidencepilot-424908950993.asia-south2.run.app/docs
 
-https://evidencepilot.onrender.com/docs
+☆https://evidencepilot.onrender.com/docs
 
 **Live Service:**
 
