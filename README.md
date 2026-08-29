@@ -145,70 +145,137 @@ The project also taught me an important practical lesson: building an AI agent i
 Built for the Google Cloud / Gemini hackathon to demonstrate an evidence-focused autonomous research workflow using Google AI technologies.
 Built with Python, FastAPI, Google GenAI SDK, Gemini, and Google Cloud technologies.
 
-----------
-## Spin-up Instructions
+-----------------
+### Spin-up Instructions
 
-### Prerequisites
+Follow these steps to run EvidencePilot locally.
 
-- Python 3.10+
+●Prerequisites
+
+- Python 3.10 or later
 - Git
-- Google Cloud account
-- Google Cloud CLI (`gcloud`)
-- A configured Google Cloud project
+- Google Cloud CLI
+- A Google Cloud project
+- Google Cloud credentials configured for Vertex AI
 
-### 1. Clone the repository
+1. Clone the repository
 
-git clone YOUR_REPOSITORY_URL
-cd EvidencePilot
+git clone https://github.com/malavneha/evidencepilot.git
+cd evidencepilot
 
-### 2. Create a virtual environment
+2. Create a virtual environment
 
 python -m venv .venv
 
-Activate it:
+Activate the virtual environment:
 
-# macOS/Linux
-source .venv/bin/activate
+Windows:
 
-# Windows
 .venv\Scripts\activate
 
-### 3. Install dependencies
+macOS/Linux:
+
+source .venv/bin/activate
+
+3. Install dependencies
 
 pip install -r requirements.txt
 
-### 4. Configure environment variables
+4. Configure environment variables
 
-Create a `.env` file and add the required configuration:
+Create a ".env" file in the project root.
 
-GOOGLE_CLOUD_PROJECT=YOUR_PROJECT_ID
-GOOGLE_CLOUD_LOCATION=YOUR_REGION
+Add the required Google Cloud / Vertex AI configuration:
 
-Add any other API keys or configuration required by the application.
+GOOGLE_CLOUD_PROJECT=your-project-id
+GOOGLE_CLOUD_LOCATION=global
+GOOGLE_GENAI_USE_VERTEXAI=1
 
-### 5. Authenticate with Google Cloud
+Replace "your-project-id" with your Google Cloud project ID.
+
+5. Authenticate with Google Cloud
 
 gcloud auth login
 
+Set your Google Cloud project:
+
 gcloud config set project YOUR_PROJECT_ID
 
-### 6. Run EvidencePilot locally
+Replace "YOUR_PROJECT_ID" with your Google Cloud project ID.
 
+6. Run EvidencePilot locally
 
+Start the FastAPI application with Uvicorn:
 
+uvicorn app:app --reload
 
-### 7. Deploy to Google Cloud
+The application will be available at:
 
-Google Cloud Run was used as part of the development and deployment workflow. However, deployment on Cloud Run was blocked by a Google Cloud billing/account issue.
+http://127.0.0.1:8000
+
+7. Open the API documentation
+
+EvidencePilot provides interactive API documentation through FastAPI.
+
+Open:
+
+http://127.0.0.1:8000/docs
+
+8. Docker
+
+EvidencePilot includes a Dockerfile configured to run the FastAPI application with Uvicorn on port 8080.
+Build the Docker image:
+
+docker build -t evidencepilot .
+
+Run the container locally:
+
+docker run -p 8080:8080 evidencepilot
+
+The containerized application will be available at:
+
+http://localhost:8080
+
+Interactive API documentation:
+http://localhost:8080/docs
+
+9. Verify the application
+
+Open the application/API documentation in your browser and verify that the EvidencePilot endpoints are available and responding.
+
+10. Cloud deployment
+
+EvidencePilot is containerized using Docker and is designed to be deployable to Google Cloud Run.
+
+The Docker container can be built with:
+
+docker build -t evidencepilot .
+
+After configuring Google Cloud and enabling the required services, the container can be deployed to Cloud Run using:
+
+gcloud run deploy evidencepilot \
+  --source . \
+  --region YOUR_REGION \
+  --allow-unauthenticated
+
+Replace "YOUR_REGION" with your Google Cloud deployment region.
+
+☆☆[Google Cloud Run was used as part of the development and deployment workflow. However, deployment on Cloud Run was blocked by a Google Cloud billing/account issue.
 The issue was reported to Google Cloud support and the hackathon managers. To ensure that the project remained publicly accessible and testable, the working service was deployed on Render.
 Current public deployment:
-https://evidencepilot.onrender.com⁠
+https://evidencepilot.onrender.com⁠]
 
-### 8. Verify the deployment
 
-Open the deployed Cloud Run URL and confirm that EvidencePilot is running.
+11. Verify the Cloud Run deployment
 
-The backend can also be verified through the Google Cloud Console / Cloud Run dashboard.
+After deployment, Google Cloud will provide a Cloud Run service URL.
+
+Open the URL in a browser and verify that the EvidencePilot service is running.
+
+The deployment can also be verified in:
+
+Google Cloud Console → Cloud Run → EvidencePilot
+
 . 
 ##👩🏻‍⚕️ Developer
 
