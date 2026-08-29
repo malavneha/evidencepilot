@@ -14,7 +14,9 @@ https://evidencepilot.onrender.com/docs
 
 **Live Service:**
 
-https://evidencepilot.onrender.com
+☆ https://evidencepilot.onrender.com
+
+☆ https://evidencepilot-424908950993.asia-south2.run.app/docs
 
 ## 💻 Source Code
 
