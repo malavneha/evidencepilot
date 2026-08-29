@@ -146,6 +146,69 @@ Built for the Google Cloud / Gemini hackathon to demonstrate an evidence-focused
 Built with Python, FastAPI, Google GenAI SDK, Gemini, and Google Cloud technologies.
 
 ----------
+## Spin-up Instructions
+
+### Prerequisites
+
+- Python 3.10+
+- Git
+- Google Cloud account
+- Google Cloud CLI (`gcloud`)
+- A configured Google Cloud project
+
+### 1. Clone the repository
+
+git clone YOUR_REPOSITORY_URL
+cd EvidencePilot
+
+### 2. Create a virtual environment
+
+python -m venv .venv
+
+Activate it:
+
+# macOS/Linux
+source .venv/bin/activate
+
+# Windows
+.venv\Scripts\activate
+
+### 3. Install dependencies
+
+pip install -r requirements.txt
+
+### 4. Configure environment variables
+
+Create a `.env` file and add the required configuration:
+
+GOOGLE_CLOUD_PROJECT=YOUR_PROJECT_ID
+GOOGLE_CLOUD_LOCATION=YOUR_REGION
+
+Add any other API keys or configuration required by the application.
+
+### 5. Authenticate with Google Cloud
+
+gcloud auth login
+
+gcloud config set project YOUR_PROJECT_ID
+
+### 6. Run EvidencePilot locally
+
+
+
+
+### 7. Deploy to Google Cloud
+
+Google Cloud Run was used as part of the development and deployment workflow. However, deployment on Cloud Run was blocked by a Google Cloud billing/account issue.
+The issue was reported to Google Cloud support and the hackathon managers. To ensure that the project remained publicly accessible and testable, the working service was deployed on Render.
+Current public deployment:
+https://evidencepilot.onrender.com⁠
+
+### 8. Verify the deployment
+
+Open the deployed Cloud Run URL and confirm that EvidencePilot is running.
+
+The backend can also be verified through the Google Cloud Console / Cloud Run dashboard.
 . 
 ##👩🏻‍⚕️ Developer
 
