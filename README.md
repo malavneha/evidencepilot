@@ -36,7 +36,7 @@ https://www.linkedin.com/posts/dr-neha-malav-743a25332_ai-generativeai-gemini-ac
 
 https://youtube.com/shorts/gH1DQYhbmCE?si=Cce5WbWS-EXsEdYO
 
-##screenshots
+## Screenshots
 [screenshot][aspirin.jpg]
 [screenshot](aspirin..jpg)
 
