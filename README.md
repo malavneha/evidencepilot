@@ -129,6 +129,7 @@ https://evidencepilot-424908950993.asia-south2.run.app/docs
 
 https://evidencepilot.onrender.com/docs⁠
 [screenshot][aspirin.jpg]
+[screenshot](aspirin..jpg)
 
 Use the POST /research endpoint with a clinical research question and review the generated research plan, evidence, and evidence gaps.
 -------------
@@ -275,11 +276,6 @@ gcloud run deploy evidencepilot \
 
 Replace "YOUR_REGION" with your Google Cloud deployment region.
 
-☆☆[Google Cloud Run was used as part of the development and deployment workflow. However, deployment on Cloud Run was blocked by a Google Cloud billing/account issue.
-The issue was reported to Google Cloud support and the hackathon managers. To ensure that the project remained publicly accessible and testable, the working service was deployed on Render.
-Current public deployment:
-https://evidencepilot.onrender.com⁠]
-
 
 11. Verify the Cloud Run deployment
 
@@ -300,6 +296,7 @@ MBBS/Ai/ML/gen ai/data analytics
 linkdin
 
 https://www.linkedin.com/in/dr-neha-malav-743a25332
+malavneha855@gmail.com 
 
 
 
