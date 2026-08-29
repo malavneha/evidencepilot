@@ -117,8 +117,19 @@ This separation makes the workflow easier to inspect, reproduce, and extend.
 -----------------------------
 🧪 Testing
 
+
+my Testing questn is
+{
+  "question": "What are the benefits of aspirin?"
+}
+
 Open the interactive API documentation:
-https://evidencepilot.onrender.com/docs⁠�
+
+https://evidencepilot-424908950993.asia-south2.run.app/docs
+
+https://evidencepilot.onrender.com/docs⁠
+[screenshot][aspirin.jpg]
+
 Use the POST /research endpoint with a clinical research question and review the generated research plan, evidence, and evidence gaps.
 -------------
 🎯 Why EvidencePilot?
