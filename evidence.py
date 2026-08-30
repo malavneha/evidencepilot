@@ -16,7 +16,8 @@ import xml.etree.ElementTree as ET
 @dataclass
 class EvidenceItem:
     """A single piece of retrieved evidence."""
-
+    
+    evidence_id: str
     title: str
     source: str
     url: str
